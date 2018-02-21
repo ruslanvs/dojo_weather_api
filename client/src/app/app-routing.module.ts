@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: "sanjose", component: SanjoseComponent },
   // { path: 'gamma/:id', component: GammaComponent },
   { path: "", pathMatch: "full", redirectTo: "" },
-  { path: "**", component: "/PageNotFoundComponent" }
+  { path: "**", redirectTo: "" }
+  // { path: "**", component: "/PageNotFoundComponent" }
 ];
 
 @NgModule({

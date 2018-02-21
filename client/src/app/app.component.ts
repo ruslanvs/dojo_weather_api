@@ -28,7 +28,8 @@ export class AppComponent implements OnInit {
   ){}
 
   ngOnInit(){
-    this._route.params.subscribe( ( params: Params ) => console.log( params["id"] ) ); //>> this one comes out as undefined
+    // this._route.params.subscribe( ( params: Params ) => console.log( params["id"] ) ); //>> this one comes out as undefined
+    // console.log ( this._route.params )
   }
 
   doHome(){
