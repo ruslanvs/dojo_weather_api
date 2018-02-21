@@ -19,7 +19,6 @@ import { HttpService } from "./http.service";
 export class AppComponent implements OnInit {
   
   title = 'Dojo Weather Station';
-  // seattle = {};
   
   constructor(
     private _httpService: HttpService,
@@ -29,20 +28,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit(){
     // this._route.params.subscribe( ( params: Params ) => console.log( params["id"] ) ); //>> this one comes out as undefined
-    // console.log ( this._route.params )
   }
 
   doHome(){
     this._router.navigate( ["/home"] );
   }
 
-  // get_seattle(){
-  //   let data = this._httpService.get_seattle();
-  //   data.subscribe( data => {
-  //     this.seattle = data;
-  //     console.log( "got Seattle", data );
-  //   })
-  // }
 }
 
 
