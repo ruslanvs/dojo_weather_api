@@ -16,7 +16,7 @@ app.use( express.static( __dirname + "/client/dist" ) );
 
 
 app.all( "*", ( req, res, next ) => {
-    res.sendFile( path.resolve( "./public/dist/index.html" ) );
+    res.sendFile( path.resolve( "./client/dist/index.html" ) );
 });
 
 app.listen( 8000, function(){
